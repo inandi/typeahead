@@ -1,1 +1,1 @@
-Typeahead Js
+Typeahead Js with Codeigniter framework

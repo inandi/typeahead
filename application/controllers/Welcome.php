@@ -22,4 +22,11 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+
+	function get_type_dt()
+	{
+		/*you can get fetch data from database*/
+		$data = [ 'desktop','mobile', 'table','computer' ];
+		echo json_encode($data);
+	}
 }

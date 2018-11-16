@@ -23,7 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+if($_SERVER['SERVER_NAME']=="localhost"){
+	$config['base_url'] = 'http://localhost/typeahead';
+} else {
+	$config['base_url'] = 'http://localhost/typeahead';
+}
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +39,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
